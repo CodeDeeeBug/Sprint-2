@@ -14,10 +14,10 @@ Background: User is on Bookstore
 
   @generatingToken
   Scenario Outline: Generating Token
-    When User enters "<username>" and "<password>" in body
+    When User enters "<userName>" and "<password>" in body
     And user click on send option to post
-    Then Toke should get generated
+    Then Token should get generated
 
     Examples: 
-      | username  | password |
+      | userName  | password |
       | Deepu | Deepu@123 |
